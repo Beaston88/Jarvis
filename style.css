@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy-Bold';
+    color: WHITE;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+/* Navbar */
+nav{
+    position: fixed;
+    background-color: #111;
+    display: flex;
+    height: 12vh;
+    align-items: flex-start;
+    width: 100vw;
+    padding: 2vw 8.5vw;
+    justify-content: space-between;
+    z-index: 10;
+}
+nav h1{
+    font-size: 1.6vw;
+}
+.nav-part2{
+    display: flex;
+    gap: 2vw;
+    align-items: flex-start;
+    padding: 1vh 0;
+    position: relative;
+    z-index: 10;
+}
+
+.nav-part2 h4{
+    font-size: 0.7vw;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 2.6vw;
+}
+
+.nav-part2 h5 {
+    margin-bottom: 1vw;
+    display: none;
+    overflow: hidden;
+}
+
+.nav-part2 h5 span{
+    font-size: 0.74vw;
+    font-weight: 500;
+    display: inline-block;
+    transform: translateY(25px);
+    
+}
+
+nav button{
+    background-color: #0BA34E;
+    display: flex;
+    align-items: center;
+    padding: 12px 12px;
+    border-radius: 50px;
+    border: none;
+    font-size: 0.85vw;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+nav button svg{
+    height: 0.85vw;
+    margin-left: 1.6vw;
+}
+
+#nav-bottom{
+    width: 83%;
+    height: 0vh;
+    position: absolute;
+    background-color: #111;
+    top: 100%;
+    z-index: 9;
+    border-bottom: 1px solid white;
+}
+
