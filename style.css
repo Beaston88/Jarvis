@@ -6,6 +6,7 @@
 html,body{
     height: 100%;
     width: 100%;
+    overflow-x: hidden;
 }
 /* Navbar */
 nav{
@@ -13,9 +14,9 @@ nav{
     position: relative;
     background-color: #111;
     display: flex;
-    height: 12vh;
+    height: 10vh;
     align-items: flex-start;
-    width: 100vw;
+    width: 90vw;
     padding: 2vw 8.5vw;
     justify-content: space-between;
     z-index: 10;
@@ -65,6 +66,12 @@ nav button{
     text-transform: uppercase;
 }
 
+nav button:hover{
+    background-color: #0BA34E;
+    color: #111;
+    cursor: pointer;
+}
+
 nav button svg{
     height: 0.85vw;
     margin-left: 1.6vw;
@@ -81,7 +88,6 @@ nav button svg{
 }
 
 /* Code of Ayush Mann aka Sonic the Hedgehog */
-/* Code of Ayush Mann aka Sonic the Hedgehog */
 
 body {
     background-image: url("images/background.jpg");
@@ -96,7 +102,7 @@ body {
     grid-template-rows: repeat(2, 1fr);
     gap: 6vw;
     position: relative;
-    top:25%;
+    top:15%;
     left: 5%;
 }
 
@@ -172,7 +178,7 @@ cursor: pointer;
 
 .cardWhole:hover #cardDown {
 rotate: -15deg; 
-left: 10px;
+left: 20px;
 }
 
 .mainPageText{
@@ -183,6 +189,8 @@ font-weight: bold;
 font-style: normal;
 color: #ffffff;
 }
+
+
 /*  Page 3 code by ankit  */
 .page3{
     height: 125vh;
@@ -191,6 +199,7 @@ color: #ffffff;
     background-size: cover;
     background-position: center;
     position: relative;
+    top:200px;
     color: #111;
     text-align: center;
 }
