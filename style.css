@@ -1,9 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: 'Gilroy-Bold';
-    color: WHITE;
 }
 html,body{
     height: 100%;
@@ -11,6 +9,7 @@ html,body{
 }
 /* Navbar */
 nav{
+    color: WHITE;
     position: fixed;
     background-color: #111;
     display: flex;
@@ -81,3 +80,112 @@ nav button svg{
     border-bottom: 1px solid white;
 }
 
+/* Code of Ayush Mann aka Sonic the Hedgehog */
+
+body {
+    background-image: url("images/background.jpg");
+    background-repeat: repeat-y;
+    background-size: cover;
+    height: 100vh; /* Ensures viewport height coverage */
+    margin: 0; /* Remove any margins */
+  }
+
+  .cardContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 100px;
+    position: relative;
+    top:5%;
+    left: 5%;
+}
+
+.card {
+    /* Specify the grid area for each card */
+    grid-area: auto;
+}
+
+/* Example grid area placement for each card */
+.card:nth-child(1) {
+    grid-area: 1 / 1 / 2 / 2; /* Start at row 1, column 1 and end at row 2, column 2 */
+}
+
+.card:nth-child(2) {
+    grid-area: 1 / 2 / 2 / 3; /* Start at row 1, column 2 and end at row 2, column 3 */
+}
+
+.card:nth-child(3) {
+    grid-area: 2 / 1 / 3 / 2; /* Start at row 2, column 1 and end at row 3, column 2 */
+}
+
+/* Add more styles for other cards as needed */
+
+  
+
+  
+
+.card{
+border-width: 35px 25px 75px 25px;
+width: 200px;
+height: 200px;
+background-color: transparent;
+
+}
+
+
+
+#cardUp{
+border: solid #ffffff;
+border-width: 35px 25px 75px 25px;
+z-index: 2;
+rotate: 5deg;
+box-shadow: 10px 10px 10px;
+position: absolute;
+top:0px
+}
+#cardUp3{
+border: solid #ffffff;
+border-width: 35px 25px 75px 25px;
+z-index: 2;
+rotate: 5deg;
+box-shadow: 10px 10px 10px;
+position: absolute;
+top:400px
+
+}
+
+#cardDown{
+border: solid #bebbbb;
+border-width: 35px 25px 75px 25px;
+display: flex;
+justify-content: center;
+align-items: center;
+rotate: -5deg;
+z-index: 1;
+transition: 0.5s;
+}
+
+.cardWhole:hover{
+cursor: pointer;
+}
+
+.cardWhole:hover #cardDown {
+rotate: -15deg; 
+left: 10px;
+top: 0px;
+}
+
+.cardImage{
+width: 200px;
+height: 200px;
+position: absolute;
+}
+
+.mainPageText{
+font-family: "Playwrite CU", cursive;
+font-size: 50px;
+font-optical-sizing: auto;
+font-weight: bold;
+font-style: normal;
+color: #ccc;
+}
