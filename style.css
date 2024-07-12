@@ -81,10 +81,10 @@ nav button svg{
 }
 
 /* Code of Ayush Mann aka Sonic the Hedgehog */
+/* Code of Ayush Mann aka Sonic the Hedgehog */
 
 body {
     background-image: url("images/background.jpg");
-    background-repeat: repeat-y;
     background-size: cover;
     height: 100vh; /* Ensures viewport height coverage */
     margin: 0; /* Remove any margins */
@@ -94,9 +94,9 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 100px;
+    gap: 6vw;
     position: relative;
-    top:5%;
+    top:25%;
     left: 5%;
 }
 
@@ -126,8 +126,8 @@ body {
 
 .card{
 border-width: 35px 25px 75px 25px;
-width: 200px;
-height: 200px;
+width: 10.41vw;
+height: 21.45vh;
 background-color: transparent;
 
 }
@@ -136,8 +136,8 @@ background-color: transparent;
 
 #cardUp{
 border: solid #ffffff;
-border-width: 35px 25px 75px 25px;
 z-index: 2;
+border-width: 3.75vh 1.5vw 8vh 1.5vw;
 rotate: 5deg;
 box-shadow: 10px 10px 10px;
 position: absolute;
@@ -145,18 +145,19 @@ top:0px
 }
 #cardUp3{
 border: solid #ffffff;
-border-width: 35px 25px 75px 25px;
+border-width: 3.75vh 1.5vw 8vh 1.5vw;
 z-index: 2;
 rotate: 5deg;
 box-shadow: 10px 10px 10px;
 position: absolute;
-top:400px
+top:44vh;
 
 }
 
 #cardDown{
 border: solid #bebbbb;
-border-width: 35px 25px 75px 25px;
+color: white;
+border-width: 3.75vh 1.5vw 8vh 1.5vw;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -172,25 +173,16 @@ cursor: pointer;
 .cardWhole:hover #cardDown {
 rotate: -15deg; 
 left: 10px;
-top: 0px;
-}
-
-.cardImage{
-width: 200px;
-height: 200px;
-position: absolute;
 }
 
 .mainPageText{
 font-family: "Playwrite CU", cursive;
-font-size: 50px;
+font-size: 3.125rem;
 font-optical-sizing: auto;
 font-weight: bold;
 font-style: normal;
-color: #ccc;
+color: #ffffff;
 }
-
-
 /*  Page 3 code by ankit  */
 .page3{
     height: 125vh;
